@@ -124,6 +124,7 @@ venv.bak/
 *.jpg
 *.jpeg
 *.ppm
+*.zip
 
 # Ignorar pastas específicas
 output/
