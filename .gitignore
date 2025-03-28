@@ -121,8 +121,6 @@ env.bak/
 venv.bak/
 
 # Ignorar arquivos de imagem
-*.jpg
-*.jpeg
 *.ppm
 *.zip
 

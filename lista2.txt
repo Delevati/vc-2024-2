@@ -1,0 +1,21 @@
+UNIVERSIDADE FEDERAL DE ALAGOASINSTITUTO DE COMPUTAÇÃOVisão ComputacionalProfessor: Thales Vieira2ª lista de exercícios - 13 de março de 2025
+
+https://docs.opencv.org/3.4/db/d27/tutorial_py_table_of_contents_feature2d.html
+Instruções:A lista deve ser respondida por grupos de até 2 pessoas (graduação) e individualmente (mestrado).Resoluções idênticas de grupos distintos serão desconsideradas.O código e as imagens devem ser anexadas a cada questão.Data limite para entrega: 27/03/2025.
+
+Nas questões 1, 2, 3 e 4, você será avaliado principalmente pela sua análise, e não apenas pela implementação.
+
+1. Na documentação da OpenCV é possível encontrar diversos detectores e descritores. Usando um conjunto com pelo menos 6 imagens (você pode tirar fotos com seu telefone, por exemplo), experimente três detectores distintos nestas imagens, incluindo o detector de Harris. Pesquise e descreva resumidamente com suas palavras (até 200 palavras para cada) como cada um funciona, incluindo seus parâmetros e quais são suas principais diferenças. Exiba resultados nas sauas imagens e analise em quais situações cada um funciona bem ou mal. Discuta seus parâmetros. Qual deles você achou melhor? Justifique.
+
+2. Repita o mesmo procedimento acima para 3 tipos de descritores, incluindo o SIFT, 
+e escolha um algoritmo de geração de correspondências (matching).
+
+3. Considere o seguinte problema: Dada uma base de imagens de rótulos de produtos, 
+crie um algoritmo que identifique, a partir de uma imagem de um produto (onde o rótulo aparece), 
+qual é o produto que aparece na foto.
+a) Crie uma base com pelo menos 10 rótulos de produto.Link para a documentação da OpenCV. 
+b) Escolha e descreva uma metodologia completa para geração de correspondências, baseada na questão anterior.
+c) Adapte a metodologia escolhida para resolver o problema e experimente em pelo menos 5 fotos de produtos da base (diferentes das fotos da base de rótulos).
+
+4. Aplique o filtro LoG em pelo menos 6 escalas distintas (você pode usar a OpenCV). Em seguida, implemente um algoritmo que determina se um pixel (x, y, s) é um máximo local no espaço de posição-escala. Aplique este algoritmo em todos os pixels das imagens resultantes para encontrar estes extremos e pinte estes pixels de uma cor diferente. Exiba as imagens resultantes. Obs.: você não precisa aplicar na imagem de menor e maior escala, nem nos pixels da borda da imagem, visto que eles não têm uma vizinhança completa.
+
