@@ -1,0 +1,49 @@
+Instruções:
+A lista deve ser respondida por grupos de até 2 pessoas (graduação) e individualmente
+(mestrado).
+Resoluções idênticas de grupos distintos serão desconsideradas.
+O código e as imagens devem ser anexadas a cada questão.
+Data limite para entrega: 17/04/2025.
+
+1. Escolha uma das metodologias que você implementou na segunda
+lista para gerar correspondências entre um par de imagens. Aplique-a em
+5 pares de imagens (com sobreposição) para calcular suas homografias, e
+aplique-as para gerar panoramas entre os pares de imagens (um panorama
+por par).
+Obs.: nessa questão, não é permitido usar a API de alto nível Stitcher.
+Dica: use a função warpPerspective da OpenCV.
+
+2. Repita a questão anterior com 5 trios de imagens (com sobreposição
+2 a 2), alinhando as imagens no plano da primeira imagem. Repita o mesmo
+alinhando no plano da segunda imagem, e da terceira imagem. Note que aqui
+será necessário compor as transformações de homografia em alguns casos, ou
+calcular inversas.
+
+3. Considere a imagem soccer.jpg em anexo no Google Classroom.
+Considere que o campo da imagem tenha as dimensões dadas pela figura
+abaixo:
+Gere manualmente correspondências entre a imagem e um mapa 2d com
+dimensões dadas pela figura. Calcule a homografia resultante e aplique na
+imagem original. Exiba o resultado. Dica: leia este tutorial.
+https://medium.com/acmvit/how-to-project-an-image-in-perspective-view-of-a-background-image-opencv-python-d101bdf966bc
+
+
+
+4. Leia o seguinte tutorial de calibração de câmera:
+https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html
+Você vai precisar de um tabuleiro de xadrez (pode imprimir numa folha
+A4, e colar num papelão ou emplastificar para a geometria ficar fixa). Meça
+as dimensões do seu tabuleiro para calibrar a câmera, considerando que o
+tabuleiro sempre está no plano z = 0, e que o canto inferior esquerdo do
+tabuleiro é a origem (0, 0, 0). Após calibrar a câmera, vamos incluir um
+objeto virtual na imagem. Considere a seguinte equação paramétrica do
+círculo centrado no ponto (1.5W, 1.5H, 0), com raio r = 0.5W e contido no
+plano z = 0, onde H e W são a as medidas da altura e largura do tabuleiro:
+
+p(θ) = (r cos θ + 1.5W, r sen θ + 1.5H, 0).
+
+Se assegure de que o círculo apareça na imagem, de acordo com a posição do
+xadrez na imagem. Para desenhar o círculo, varie o valor do ângulo θ entre
+0 e 2π para amostrar alguns pontos, e projete-os na imagem. Repita isso 3
+vezes, variando o ângulo entre o vetor normal do tabuleiro e o eixo principal
+da câmera.
