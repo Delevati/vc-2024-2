@@ -5,8 +5,10 @@ listas/
 *.zip
 *.pth
 *.ply
+*.avi
+*.mp4
 
-# Byte-compiled / optimized / DLL files
+# Byte-cođiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -59,6 +61,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+models/
 
 # Translations
 *.mo
