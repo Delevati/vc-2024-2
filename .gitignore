@@ -1,5 +1,7 @@
 # task 04 large files
 PetImages/
+backup/
+listas/
 *.zip
 *.pth
 *.ply
